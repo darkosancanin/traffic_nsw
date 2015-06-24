@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* NSWTrafficAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NSWTrafficAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		2899E5600DE3E45000AC0155 /* TrafficReportRegions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* TrafficReportRegions.xib */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* TrafficReportsRegionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* TrafficReportsRegionsController.m */; };
+		A2127AA70FD0EBCA00F9C617 /* CamerasRegionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2127AA60FD0EBCA00F9C617 /* CamerasRegionsController.m */; };
+		A2127AAF0FD0FE8600F9C617 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = A2127AAE0FD0FE8600F9C617 /* Camera.m */; };
+		A2127ABA0FD1055E00F9C617 /* Cameras.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2127AB90FD1055E00F9C617 /* Cameras.xib */; };
+		A2127B150FD1070E00F9C617 /* CamerasController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2127B130FD1070E00F9C617 /* CamerasController.m */; };
+		A2127BAF0FD1238C00F9C617 /* CameraDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2127BAE0FD1238C00F9C617 /* CameraDetailsController.m */; };
+		A2127BB10FD123CD00F9C617 /* CameraDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2127BB00FD123CD00F9C617 /* CameraDetails.xib */; };
+		A2127C020FD15AF200F9C617 /* UpdateCameraImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2127C010FD15AF200F9C617 /* UpdateCameraImageOperation.m */; };
+		A2127D180FD17EBC00F9C617 /* CameraImageModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2127D170FD17EBC00F9C617 /* CameraImageModal.xib */; };
+		A2127D250FD17F9700F9C617 /* CameraImageModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2127D240FD17F9700F9C617 /* CameraImageModalController.m */; };
+		A2753AF30FC6D4D000632F60 /* UpdateTrafficReportsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2753AF20FC6D4D000632F60 /* UpdateTrafficReportsOperation.m */; };
+		A2753B0E0FC6D6F700632F60 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = A2753B0D0FC6D6F700632F60 /* RegexKitLite.m */; };
+		A277A30E0FC7DF010031575C /* 1_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3070FC7DF010031575C /* 1_large.png */; };
+		A277A30F0FC7DF010031575C /* 2_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3080FC7DF010031575C /* 2_large.png */; };
+		A277A3100FC7DF010031575C /* 3_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3090FC7DF010031575C /* 3_large.png */; };
+		A277A3110FC7DF010031575C /* 4_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A30A0FC7DF010031575C /* 4_large.png */; };
+		A277A3120FC7DF010031575C /* 5_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A30B0FC7DF010031575C /* 5_large.png */; };
+		A277A3130FC7DF010031575C /* 6_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A30C0FC7DF010031575C /* 6_large.png */; };
+		A277A3140FC7DF010031575C /* 7_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A30D0FC7DF010031575C /* 7_large.png */; };
+		A277A3BC0FC807290031575C /* 3_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3B50FC807290031575C /* 3_small.png */; };
+		A277A3BD0FC807290031575C /* 4_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3B60FC807290031575C /* 4_small.png */; };
+		A277A3BE0FC807290031575C /* 7_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3B70FC807290031575C /* 7_small.png */; };
+		A277A3BF0FC807290031575C /* 5_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3B80FC807290031575C /* 5_small.png */; };
+		A277A3C00FC807290031575C /* 1_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3B90FC807290031575C /* 1_small.png */; };
+		A277A3C10FC807290031575C /* 6_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3BA0FC807290031575C /* 6_small.png */; };
+		A277A3C20FC807290031575C /* 2_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A277A3BB0FC807290031575C /* 2_small.png */; };
+		A277A4440FC8219D0031575C /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A277A4430FC8219D0031575C /* StringHelper.m */; };
+		A27E38810FF93AEE00F40413 /* rta.png in Resources */ = {isa = PBXBuildFile; fileRef = A27E38800FF93AEE00F40413 /* rta.png */; };
+		A2814B820FCAD84900D14238 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A2814B810FCAD84900D14238 /* Icon.png */; };
+		A288C9C10FC94B8700FB8DD0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A288C9C00FC94B8700FB8DD0 /* Default.png */; };
+		A28B9C1D0FD3E322002DF39A /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = A28B9C1C0FD3E322002DF39A /* About.xib */; };
+		A28B9C210FD3EDB8002DF39A /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28B9C200FD3EDB8002DF39A /* AboutController.m */; };
+		A28B9C6B0FD3F87C002DF39A /* IconImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A28B9C6A0FD3F87C002DF39A /* IconImage.png */; };
+		A292D2A90FD2B79400AE8A20 /* Disclaimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = A292D2A80FD2B79400AE8A20 /* Disclaimer.xib */; };
+		A292D2AD0FD2B7AA00AE8A20 /* DisclaimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A292D2AC0FD2B7AA00AE8A20 /* DisclaimerController.m */; };
+		A294ED4D0FD0D90E00D85485 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A294ED4C0FD0D90E00D85485 /* camera.png */; };
+		A294ED4F0FD0D9E000D85485 /* traffic.png in Resources */ = {isa = PBXBuildFile; fileRef = A294ED4E0FD0D9E000D85485 /* traffic.png */; };
+		A2A08DDC0FC5541B004C99D3 /* nswtraffic.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A2A08DDB0FC5541B004C99D3 /* nswtraffic.sqlite */; };
+		A2A08DF00FC555AD004C99D3 /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A08DEF0FC555AD004C99D3 /* Region.m */; };
+		A2A08E440FC55B74004C99D3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A08E430FC55B74004C99D3 /* libsqlite3.0.dylib */; };
+		A2A08EA40FC563A8004C99D3 /* TrafficReports.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A08EA30FC563A8004C99D3 /* TrafficReports.xib */; };
+		A2A08EA60FC563B7004C99D3 /* TrafficReportDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A08EA50FC563B7004C99D3 /* TrafficReportDetails.xib */; };
+		A2A08EA90FC563E4004C99D3 /* TrafficReportsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A08EA80FC563E4004C99D3 /* TrafficReportsController.m */; };
+		A2A08EAC0FC56406004C99D3 /* TrafficReportDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A08EAB0FC56406004C99D3 /* TrafficReportDetailsController.m */; };
+		A2A08EF80FC56BE7004C99D3 /* TrafficReport.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A08EF70FC56BE7004C99D3 /* TrafficReport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* NSWTrafficAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWTrafficAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* NSWTrafficAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWTrafficAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TrafficNSW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficNSW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E55F0DE3E45000AC0155 /* TrafficReportRegions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafficReportRegions.xib; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* NSWTraffic_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWTraffic_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* TrafficReportsRegionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficReportsRegionsController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* TrafficReportsRegionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficReportsRegionsController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2127AA50FD0EBCA00F9C617 /* CamerasRegionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamerasRegionsController.h; sourceTree = "<group>"; };
+		A2127AA60FD0EBCA00F9C617 /* CamerasRegionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamerasRegionsController.m; sourceTree = "<group>"; };
+		A2127AAD0FD0FE8600F9C617 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		A2127AAE0FD0FE8600F9C617 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		A2127AB90FD1055E00F9C617 /* Cameras.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cameras.xib; sourceTree = "<group>"; };
+		A2127B130FD1070E00F9C617 /* CamerasController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamerasController.m; sourceTree = "<group>"; };
+		A2127B140FD1070E00F9C617 /* CamerasController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamerasController.h; sourceTree = "<group>"; };
+		A2127BAD0FD1238C00F9C617 /* CameraDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDetailsController.h; sourceTree = "<group>"; };
+		A2127BAE0FD1238C00F9C617 /* CameraDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraDetailsController.m; sourceTree = "<group>"; };
+		A2127BB00FD123CD00F9C617 /* CameraDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraDetails.xib; sourceTree = "<group>"; };
+		A2127BFD0FD15AE700F9C617 /* UpdateCameraImageOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateCameraImageOperationDelegate.h; sourceTree = "<group>"; };
+		A2127C000FD15AF200F9C617 /* UpdateCameraImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateCameraImageOperation.h; sourceTree = "<group>"; };
+		A2127C010FD15AF200F9C617 /* UpdateCameraImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateCameraImageOperation.m; sourceTree = "<group>"; };
+		A2127D170FD17EBC00F9C617 /* CameraImageModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraImageModal.xib; sourceTree = "<group>"; };
+		A2127D230FD17F9700F9C617 /* CameraImageModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImageModalController.h; sourceTree = "<group>"; };
+		A2127D240FD17F9700F9C617 /* CameraImageModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraImageModalController.m; sourceTree = "<group>"; };
+		A2753AEE0FC6D44F00632F60 /* UpdateTrafficReportsOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateTrafficReportsOperationDelegate.h; sourceTree = "<group>"; };
+		A2753AF10FC6D4D000632F60 /* UpdateTrafficReportsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateTrafficReportsOperation.h; sourceTree = "<group>"; };
+		A2753AF20FC6D4D000632F60 /* UpdateTrafficReportsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateTrafficReportsOperation.m; sourceTree = "<group>"; };
+		A2753B0C0FC6D6F700632F60 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		A2753B0D0FC6D6F700632F60 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		A277A3070FC7DF010031575C /* 1_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_large.png; sourceTree = "<group>"; };
+		A277A3080FC7DF010031575C /* 2_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_large.png; sourceTree = "<group>"; };
+		A277A3090FC7DF010031575C /* 3_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_large.png; sourceTree = "<group>"; };
+		A277A30A0FC7DF010031575C /* 4_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_large.png; sourceTree = "<group>"; };
+		A277A30B0FC7DF010031575C /* 5_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_large.png; sourceTree = "<group>"; };
+		A277A30C0FC7DF010031575C /* 6_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_large.png; sourceTree = "<group>"; };
+		A277A30D0FC7DF010031575C /* 7_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_large.png; sourceTree = "<group>"; };
+		A277A3B50FC807290031575C /* 3_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_small.png; sourceTree = "<group>"; };
+		A277A3B60FC807290031575C /* 4_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_small.png; sourceTree = "<group>"; };
+		A277A3B70FC807290031575C /* 7_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_small.png; sourceTree = "<group>"; };
+		A277A3B80FC807290031575C /* 5_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_small.png; sourceTree = "<group>"; };
+		A277A3B90FC807290031575C /* 1_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_small.png; sourceTree = "<group>"; };
+		A277A3BA0FC807290031575C /* 6_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_small.png; sourceTree = "<group>"; };
+		A277A3BB0FC807290031575C /* 2_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_small.png; sourceTree = "<group>"; };
+		A277A4420FC8219D0031575C /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
+		A277A4430FC8219D0031575C /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
+		A27E38800FF93AEE00F40413 /* rta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rta.png; sourceTree = "<group>"; };
+		A2814B810FCAD84900D14238 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		A288C9C00FC94B8700FB8DD0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		A28B9C1C0FD3E322002DF39A /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		A28B9C1F0FD3EDB8002DF39A /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		A28B9C200FD3EDB8002DF39A /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		A28B9C6A0FD3F87C002DF39A /* IconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconImage.png; sourceTree = "<group>"; };
+		A292D2A80FD2B79400AE8A20 /* Disclaimer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Disclaimer.xib; sourceTree = "<group>"; };
+		A292D2AB0FD2B7AA00AE8A20 /* DisclaimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclaimerController.h; sourceTree = "<group>"; };
+		A292D2AC0FD2B7AA00AE8A20 /* DisclaimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclaimerController.m; sourceTree = "<group>"; };
+		A294ED4C0FD0D90E00D85485 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		A294ED4E0FD0D9E000D85485 /* traffic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = traffic.png; sourceTree = "<group>"; };
+		A2A08DDB0FC5541B004C99D3 /* nswtraffic.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = nswtraffic.sqlite; sourceTree = "<group>"; };
+		A2A08DEE0FC555AD004C99D3 /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
+		A2A08DEF0FC555AD004C99D3 /* Region.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Region.m; sourceTree = "<group>"; };
+		A2A08E430FC55B74004C99D3 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A2A08EA30FC563A8004C99D3 /* TrafficReports.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafficReports.xib; sourceTree = "<group>"; };
+		A2A08EA50FC563B7004C99D3 /* TrafficReportDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafficReportDetails.xib; sourceTree = "<group>"; };
+		A2A08EA70FC563E4004C99D3 /* TrafficReportsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficReportsController.h; sourceTree = "<group>"; };
+		A2A08EA80FC563E4004C99D3 /* TrafficReportsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficReportsController.m; sourceTree = "<group>"; };
+		A2A08EAA0FC56406004C99D3 /* TrafficReportDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficReportDetailsController.h; sourceTree = "<group>"; };
+		A2A08EAB0FC56406004C99D3 /* TrafficReportDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficReportDetailsController.m; sourceTree = "<group>"; };
+		A2A08EF60FC56BE7004C99D3 /* TrafficReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficReport.h; sourceTree = "<group>"; };
+		A2A08EF70FC56BE7004C99D3 /* TrafficReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficReport.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				A2A08E440FC55B74004C99D3 /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A277A4420FC8219D0031575C /* StringHelper.h */,
+				A277A4430FC8219D0031575C /* StringHelper.m */,
+				A2753B0C0FC6D6F700632F60 /* RegexKitLite.h */,
+				A2753B0D0FC6D6F700632F60 /* RegexKitLite.m */,
+				28C286DF0D94DF7D0034E888 /* TrafficReportsRegionsController.h */,
+				28C286E00D94DF7D0034E888 /* TrafficReportsRegionsController.m */,
+				1D3623240D0F684500981E51 /* NSWTrafficAppDelegate.h */,
+				1D3623250D0F684500981E51 /* NSWTrafficAppDelegate.m */,
+				A2A08DEE0FC555AD004C99D3 /* Region.h */,
+				A2A08DEF0FC555AD004C99D3 /* Region.m */,
+				A2A08EA70FC563E4004C99D3 /* TrafficReportsController.h */,
+				A2A08EA80FC563E4004C99D3 /* TrafficReportsController.m */,
+				A2A08EAA0FC56406004C99D3 /* TrafficReportDetailsController.h */,
+				A2A08EAB0FC56406004C99D3 /* TrafficReportDetailsController.m */,
+				A2A08EF60FC56BE7004C99D3 /* TrafficReport.h */,
+				A2A08EF70FC56BE7004C99D3 /* TrafficReport.m */,
+				A2753AEE0FC6D44F00632F60 /* UpdateTrafficReportsOperationDelegate.h */,
+				A2753AF10FC6D4D000632F60 /* UpdateTrafficReportsOperation.h */,
+				A2753AF20FC6D4D000632F60 /* UpdateTrafficReportsOperation.m */,
+				A2127AA50FD0EBCA00F9C617 /* CamerasRegionsController.h */,
+				A2127AA60FD0EBCA00F9C617 /* CamerasRegionsController.m */,
+				A2127B140FD1070E00F9C617 /* CamerasController.h */,
+				A2127B130FD1070E00F9C617 /* CamerasController.m */,
+				A2127AAD0FD0FE8600F9C617 /* Camera.h */,
+				A2127AAE0FD0FE8600F9C617 /* Camera.m */,
+				A2127BAD0FD1238C00F9C617 /* CameraDetailsController.h */,
+				A2127BAE0FD1238C00F9C617 /* CameraDetailsController.m */,
+				A2127BFD0FD15AE700F9C617 /* UpdateCameraImageOperationDelegate.h */,
+				A2127C000FD15AF200F9C617 /* UpdateCameraImageOperation.h */,
+				A2127C010FD15AF200F9C617 /* UpdateCameraImageOperation.m */,
+				A2127D230FD17F9700F9C617 /* CameraImageModalController.h */,
+				A2127D240FD17F9700F9C617 /* CameraImageModalController.m */,
+				A292D2AB0FD2B7AA00AE8A20 /* DisclaimerController.h */,
+				A292D2AC0FD2B7AA00AE8A20 /* DisclaimerController.m */,
+				A28B9C1F0FD3EDB8002DF39A /* AboutController.h */,
+				A28B9C200FD3EDB8002DF39A /* AboutController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TrafficNSW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* NSWTraffic_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A277A3060FC7DF010031575C /* images */,
+				A2A08DDB0FC5541B004C99D3 /* nswtraffic.sqlite */,
+				A2127AB90FD1055E00F9C617 /* Cameras.xib */,
+				2899E55F0DE3E45000AC0155 /* TrafficReportRegions.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				A2A08EA30FC563A8004C99D3 /* TrafficReports.xib */,
+				A2A08EA50FC563B7004C99D3 /* TrafficReportDetails.xib */,
+				A2127BB00FD123CD00F9C617 /* CameraDetails.xib */,
+				A2127D170FD17EBC00F9C617 /* CameraImageModal.xib */,
+				A292D2A80FD2B79400AE8A20 /* Disclaimer.xib */,
+				A28B9C1C0FD3E322002DF39A /* About.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2A08E430FC55B74004C99D3 /* libsqlite3.0.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A277A3060FC7DF010031575C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A27E38800FF93AEE00F40413 /* rta.png */,
+				A28B9C6A0FD3F87C002DF39A /* IconImage.png */,
+				A2814B810FCAD84900D14238 /* Icon.png */,
+				A288C9C00FC94B8700FB8DD0 /* Default.png */,
+				A294ED4E0FD0D9E000D85485 /* traffic.png */,
+				A294ED4C0FD0D90E00D85485 /* camera.png */,
+				A277A3B50FC807290031575C /* 3_small.png */,
+				A277A3B60FC807290031575C /* 4_small.png */,
+				A277A3B70FC807290031575C /* 7_small.png */,
+				A277A3B80FC807290031575C /* 5_small.png */,
+				A277A3B90FC807290031575C /* 1_small.png */,
+				A277A3BA0FC807290031575C /* 6_small.png */,
+				A277A3BB0FC807290031575C /* 2_small.png */,
+				A277A3070FC7DF010031575C /* 1_large.png */,
+				A277A3080FC7DF010031575C /* 2_large.png */,
+				A277A3090FC7DF010031575C /* 3_large.png */,
+				A277A30A0FC7DF010031575C /* 4_large.png */,
+				A277A30B0FC7DF010031575C /* 5_large.png */,
+				A277A30C0FC7DF010031575C /* 6_large.png */,
+				A277A30D0FC7DF010031575C /* 7_large.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* NSWTraffic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NSWTraffic" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSWTraffic;
+			productName = NSWTraffic;
+			productReference = 1D6058910D05DD3D006BFB54 /* TrafficNSW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NSWTraffic" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* NSWTraffic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* TrafficReportRegions.xib in Resources */,
+				A2A08DDC0FC5541B004C99D3 /* nswtraffic.sqlite in Resources */,
+				A2A08EA40FC563A8004C99D3 /* TrafficReports.xib in Resources */,
+				A2A08EA60FC563B7004C99D3 /* TrafficReportDetails.xib in Resources */,
+				A277A30E0FC7DF010031575C /* 1_large.png in Resources */,
+				A277A30F0FC7DF010031575C /* 2_large.png in Resources */,
+				A277A3100FC7DF010031575C /* 3_large.png in Resources */,
+				A277A3110FC7DF010031575C /* 4_large.png in Resources */,
+				A277A3120FC7DF010031575C /* 5_large.png in Resources */,
+				A277A3130FC7DF010031575C /* 6_large.png in Resources */,
+				A277A3140FC7DF010031575C /* 7_large.png in Resources */,
+				A277A3BC0FC807290031575C /* 3_small.png in Resources */,
+				A277A3BD0FC807290031575C /* 4_small.png in Resources */,
+				A277A3BE0FC807290031575C /* 7_small.png in Resources */,
+				A277A3BF0FC807290031575C /* 5_small.png in Resources */,
+				A277A3C00FC807290031575C /* 1_small.png in Resources */,
+				A277A3C10FC807290031575C /* 6_small.png in Resources */,
+				A277A3C20FC807290031575C /* 2_small.png in Resources */,
+				A288C9C10FC94B8700FB8DD0 /* Default.png in Resources */,
+				A2814B820FCAD84900D14238 /* Icon.png in Resources */,
+				A294ED4D0FD0D90E00D85485 /* camera.png in Resources */,
+				A294ED4F0FD0D9E000D85485 /* traffic.png in Resources */,
+				A2127ABA0FD1055E00F9C617 /* Cameras.xib in Resources */,
+				A2127BB10FD123CD00F9C617 /* CameraDetails.xib in Resources */,
+				A2127D180FD17EBC00F9C617 /* CameraImageModal.xib in Resources */,
+				A292D2A90FD2B79400AE8A20 /* Disclaimer.xib in Resources */,
+				A28B9C1D0FD3E322002DF39A /* About.xib in Resources */,
+				A28B9C6B0FD3F87C002DF39A /* IconImage.png in Resources */,
+				A27E38810FF93AEE00F40413 /* rta.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* NSWTrafficAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* TrafficReportsRegionsController.m in Sources */,
+				A2A08DF00FC555AD004C99D3 /* Region.m in Sources */,
+				A2A08EA90FC563E4004C99D3 /* TrafficReportsController.m in Sources */,
+				A2A08EAC0FC56406004C99D3 /* TrafficReportDetailsController.m in Sources */,
+				A2A08EF80FC56BE7004C99D3 /* TrafficReport.m in Sources */,
+				A2753AF30FC6D4D000632F60 /* UpdateTrafficReportsOperation.m in Sources */,
+				A2753B0E0FC6D6F700632F60 /* RegexKitLite.m in Sources */,
+				A277A4440FC8219D0031575C /* StringHelper.m in Sources */,
+				A2127AA70FD0EBCA00F9C617 /* CamerasRegionsController.m in Sources */,
+				A2127AAF0FD0FE8600F9C617 /* Camera.m in Sources */,
+				A2127B150FD1070E00F9C617 /* CamerasController.m in Sources */,
+				A2127BAF0FD1238C00F9C617 /* CameraDetailsController.m in Sources */,
+				A2127C020FD15AF200F9C617 /* UpdateCameraImageOperation.m in Sources */,
+				A2127D250FD17F9700F9C617 /* CameraImageModalController.m in Sources */,
+				A292D2AD0FD2B7AA00AE8A20 /* DisclaimerController.m in Sources */,
+				A28B9C210FD3EDB8002DF39A /* AboutController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NSWTraffic_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_NAME = TrafficNSW;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NSWTraffic_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = NSWTraffic;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Darko Sancanin";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9C5D6C3C-A2E8-4674-A13F-D5AB2288441F";
+				SDKROOT = iphoneos2.2.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NSWTraffic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NSWTraffic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
